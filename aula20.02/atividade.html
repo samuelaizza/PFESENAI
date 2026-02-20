@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Atividade Bootstrap</title>
+</head>
+<body class="bg-black bg-gradient">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="img/logo site.jpg" class="sizeLogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto fs-4">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trabalhe conosco</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Notícias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Da semana</a></li>
+            <li><a class="dropdown-item" href="#">Novidades</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Support</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search"/>
+        <button class="btn btn-outline-success">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="text-center mt-3">
+    <img src="img/lolremovebg.png" class="img-fluid" alt="League of Legends">
+</div>
+
+<div class="container">
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+
+      <!-- IRELIA -->
+      <div class="carousel-item active">
+        <img src="img/irelia.jpg" class="d-block w-100 alturaImg rounded-5">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+          <h4>Irelia</h4>
+          <p>A Mestra das Lâminas controla lâminas telecinéticas com precisão mortal, derrotando inimigos com elegância e agilidade.</p>
+        </div>
+      </div>
+
+      <!-- YASUO -->
+      <div class="carousel-item">
+        <img src="img/yasuo.png" class="d-block w-100 alturaImg rounded-5">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+          <h4>Yasuo</h4>
+          <p>Um espadachim errante que manipula o vento para atacar e se defender, buscando redenção por seu passado.</p>
+        </div>
+      </div>
+
+      <!-- ZED -->
+      <div class="carousel-item">
+        <img src="img/zed.jpg" class="d-block w-100 alturaImg rounded-5">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+          <h4>Zed</h4>
+          <p>Mestre das sombras que utiliza energia sombria para eliminar seus inimigos com precisão e rapidez.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</div>
+
+</body>
+</html>

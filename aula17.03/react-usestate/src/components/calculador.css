@@ -1,0 +1,65 @@
+/* Container que envolve a calculadora */
+form {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Grade de botões */
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo especial para o botão Limpar */
+button:last-child {
+    background-color: #dc3545;
+    grid-column: span 2; /* Faz o botão ocupar a linha toda */
+}
+
+button:last-child:hover {
+    background-color: #a71d2a;
+}
+
+span {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #28a745;
+}
